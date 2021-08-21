@@ -1,0 +1,176 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desatBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+  }
+  
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--paleBlue);
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    width: 375px;
+    height: 600px;
+    border-radius: 25px;
+}
+
+#coverImage {
+    max-width: 100%;
+    object-fit: fill;
+    border-radius: 25px 25px 0 0;
+}
+
+.inner-card {
+    padding: 0 2rem 0 2rem;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-title {
+    margin: 2rem 2rem 1.5rem 2rem;
+    color: var(--darkBlue);
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.card-subtitle{
+    margin-bottom: 1.5rem;
+    color: var(--desatBlue);
+}
+
+.pricing-pannel {
+    background-color: var(--veryPaleBlue);
+    border-radius: 10px;
+    max-width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 0 1.5rem 0 1.5rem;
+    align-items: center;
+}
+
+#music-icon {
+    height: 40px;
+    width: auto;
+    padding-right: 1rem;
+}
+
+.pricing-price{
+    width: 100%;
+}
+
+.pricing-change {
+    width: 100%;
+    text-align: end;
+}
+
+#pricing-change-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--brightBlue);
+}
+
+#pricing-change-text:hover{
+    cursor: pointer;
+}
+
+#pricing-change-text:active{
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.price-text {
+    color: var(--darkBlue);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: var(--desatBlue);
+}
+
+
+.buttons {
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    height: 45px;
+    font-weight: 700;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.payment-button { 
+    border-radius: 10px;
+    width: 100%;
+    background-color: var(--brightBlue);
+    color: white;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.payment-button:active {
+    opacity: 0.7;
+}
+
+.cancel-button {
+    color: var(--desatBlue);
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.cancel-button:hover{
+    cursor: pointer;
+}
+
+.cancel-button:active{
+    color: var(--darkBlue);
+}
+
+@media screen and (max-width: 460px){
+
+    .card{
+        width: 350px;
+    }
+
+    .pricing-change{
+        width: 80%;
+    }
+}
